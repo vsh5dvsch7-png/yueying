@@ -19,9 +19,9 @@ Yueying (阅影) means "read video". One package gives you an **MCP server**, a 
 ![Claude Desktop: a YouTube link is pasted, the watch_video tool runs for about 40 seconds, and Claude answers with timestamped key points](docs/demo-desktop.gif)
 
 *Claude Desktop with yueying connected: paste a link, wait about forty seconds, get the video back as
-timestamped notes. Nothing left the machine except the download itself — the transcript came from the
-platform's captions and the keyframes from ffmpeg. Demo video: [GitInGifs: Git Branches](https://www.youtube.com/watch?v=Q5OaMTd7PwM)
-by GitLab, CC BY.*
+timestamped notes. This video ships captions, so speech recognition never ran, and the model asked for
+the transcript only. Keyframes and contact sheets come back through `get_frames` when it needs to see
+the screen. Demo video: [GitInGifs: Git Branches](https://www.youtube.com/watch?v=Q5OaMTd7PwM) by GitLab, CC BY.*
 
 ![A 3x3 contact sheet: nine keyframes, each with a yellow "#number mm:ss" label bottom-left](docs/demo-grid.jpg)
 
